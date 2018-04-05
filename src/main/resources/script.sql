@@ -5,5 +5,3 @@ CREATE TABLE `customer` (
   `customer_name` varchar(50) NOT NULL,
    PRIMARY KEY (`id`)
  );
-insert  into `customer`(`id`,`customer_number`,`customer_name`) values 
-(1,101,'Schmitt'),(2,102,'Jean');

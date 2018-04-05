@@ -29,7 +29,6 @@ public class CustomerController {
 	public Customer createCustomer(@RequestBody Customer customer) {
 		jdbcTemplate.update("insert  into customer(id, customer_number,customer_name) values (?, ?,?)",
 				new Object[] { customer.getId(), customer.getCustomerNumber(), customer.getCustomerName() });
-		System.out.println("Test");
 		return customer;
 	}
 
